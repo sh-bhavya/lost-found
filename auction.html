@@ -1,0 +1,257 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Auction Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        .parallax {
+            background-image: url('parallax.jpeg');
+            min-height: 400px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="font-roboto bg-gray-100">
+    <!-- Header Section -->
+    <header class="bg-purple-700 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo and Title -->
+            <div class="flex items-center space-x-4">
+                <img alt="Auction House Logo" class="h-10 w-10 rounded-full" src="logo.png"/>
+                <h1 class="text-2xl font-bold">Auction House</h1>
+            </div>
+            <!-- Navigation Links for Desktop -->
+            <nav class="hidden md:flex space-x-4">
+                <a class="hover:underline" href="index.html">Home</a>
+                <a class="hover:underline" href="#auctions">Auctions</a>
+                <a class="hover:underline" href="#">About</a>
+                <a class="hover:underline" href="#">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button class="text-white focus:outline-none" id="menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Navigation Menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <nav class="bg-purple-700 p-4">
+                <a class="block py-2 hover:underline" href="index.html">Home</a>
+                <a class="block py-2 hover:underline" href="#auctions">Auctions</a>
+                <a class="block py-2 hover:underline" href="#">About</a>
+                <a class="block py-2 hover:underline" href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Parallax Section -->
+    <div class="parallax"></div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4">
+        <!-- Current Auctions Section -->
+        <section class="mb-8" id="auctions">
+            <h2 class="text-3xl font-bold mb-4 text-purple-700">Current Auctions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Auction Item 1 -->
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img alt="Image of a vintage car up for auction" class="w-full h-48 object-cover rounded-t-lg" src="https://storage.googleapis.com/a1aa/image/2Txbtloed9RhfkM17y81Q77VvA3cfYSqGzthEfxe9VDt0WIhC.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2 text-purple-700">Vintage Car</h3>
+                        <p class="text-gray-700 mb-4">A beautiful vintage car in excellent condition.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-purple-700">$15,000</span>
+                            <button class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">Bid Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Auction Item 2 -->
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img alt="Image of a rare painting up for auction" class="w-full h-48 object-cover rounded-t-lg" src="https://storage.googleapis.com/a1aa/image/1YxsvBhoHQZdCV0lTuHOwtnGrSiGTHifMBdpmJYUqfPesFSoA.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2 text-purple-700">Rare Painting</h3>
+                        <p class="text-gray-700 mb-4">A rare painting by a famous artist.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-purple-700">$8,000</span>
+                            <button class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">Bid Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Auction Item 3 -->
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img alt="Image of an antique clock up for auction" class="w-full h-48 object-cover rounded-t-lg" src="https://storage.googleapis.com/a1aa/image/YD2RruDgZVakMVNNFnaA4nD0QsoevJjnDneSpie7rLRxsFSoA.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2 text-purple-700">Antique Clock</h3>
+                        <p class="text-gray-700 mb-4">An antique clock from the 19th century.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-purple-700">$2,500</span>
+                            <button class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">Bid Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Auction Item 4 -->
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img alt="Image of a luxury watch up for auction" class="w-full h-48 object-cover rounded-t-lg" src="https://storage.googleapis.com/a1aa/image/F2GZCVYZMTYKPtkCpCQCXGWCL3SNJZtnOiHIJBYyITnptQCF.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2 text-purple-700">Luxury Watch</h3>
+                        <p class="text-gray-700 mb-4">A luxury watch with a diamond-studded bezel.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-purple-700">$12,000</span>
+                            <button class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">Bid Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Auction Item 5 -->
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img alt="Image of a classic guitar up for auction" class="w-full h-48 object-cover rounded-t-lg" src="https://storage.googleapis.com/a1aa/image/ye4O0qGqPbSRB6FHUg3WO7qLAc7mHw2837UOg6Hhem4h2CJUA.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2 text-purple-700">Classic Guitar</h3>
+                        <p class="text-gray-700 mb-4">A classic guitar in mint condition.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-purple-700">$3,000</span>
+                            <button class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">Bid Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Auction Item 6 -->
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img alt="Image of a vintage typewriter up for auction" class="w-full h-48 object-cover rounded-t-lg" src="https://storage.googleapis.com/a1aa/image/fDaHXZPxyywIKqceQGbPJ0dk5TD1RbiPasqx4oYpAXyc2CJUA.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2 text-purple-700">Vintage Typewriter</h3>
+                        <p class="text-gray-700 mb-4">A vintage typewriter in working condition.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-purple-700">$1,200</span>
+                            <button class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">Bid Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Auctions Section -->
+        <section>
+            <h2 class="text-3xl font-bold mb-4 text-purple-700">Upcoming Auctions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Upcoming Auction Item 1 -->
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img alt="Image of a vintage motorcycle up for auction" class="w-full h-48 object-cover rounded-t-lg" src="https://storage.googleapis.com/a1aa/image/O0twmEY2rWLtJ9t06do740eeoqQkSceLtccSwyKtOexezWIhC.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2 text-purple-700">Vintage Motorcycle</h3>
+                        <p class="text-gray-700 mb-4">A vintage motorcycle in excellent condition.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-purple-700">Starting at $10,000</span>
+                            <button class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Upcoming Auction Item 2 -->
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img alt="Image of a rare coin collection up for auction" class="w-full h-48 object-cover rounded-t-lg" src="https://storage.googleapis.com/a1aa/image/RLKehuHxbG0RLydXoDmky1CKnOcyEpxWgY3xpbUcesvj2CJUA.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2 text-purple-700">Rare Coin Collection</h3>
+                        <p class="text-gray-700 mb-4">A collection of rare coins from around the world.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-purple-700">Starting at $5,000</span>
+                            <button class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Upcoming Auction Item 3 -->
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img alt="Image of a luxury handbag up for auction" class="w-full h-48 object-cover rounded-t-lg" src="https://storage.googleapis.com/a1aa/image/DiQMqjfyUz3bek5HMs0aoU4KIuJ76yiqbHt3lNqnfRPtsFSoA.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2 text-purple-700">Luxury Handbag</h3>
+                        <p class="text-gray-700 mb-4">A luxury handbag from a renowned designer.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-purple-700">Starting at $3,500</span>
+                            <button class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Upcoming Auction Item 4 -->
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img alt="Image of a classic vinyl record collection up for auction" class="w-full h-48 object-cover rounded-t-lg" src="https://storage.googleapis.com/a1aa/image/IqvYZeQByET5YqA75LofHNc2iapTZh7teeG6GvoGMHvnZLkQB.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2 text-purple-700">Classic Vinyl Records</h3>
+                        <p class="text-gray-700 mb-4">A collection of classic vinyl records.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-purple-700">Starting at $1,000</span>
+                            <button class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Upcoming Auction Item 5 -->
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img alt="Image of a rare book collection up for auction" class="w-full h-48 object-cover rounded-t-lg" src="https://storage.googleapis.com/a1aa/image/AELsQvOB9eSpVy0NBUJkanBuixNm94Z9ESncxzV3wyTRbhEKA.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2 text-purple-700">Rare Book Collection</h3>
+                        <p class="text-gray-700 mb-4">A collection of rare books from various genres.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-purple-700">Starting at $2,000</span>
+                            <button class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Upcoming Auction Item 6 -->
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img alt="Image of a vintage jewelry set up for auction" class="w-full h-48 object-cover rounded-t-lg" src="https://storage.googleapis.com/a1aa/image/wTLFctd0RHZCJpZEeBOkeTVcLxHxi8gk09F8zV7pKi3a2CJUA.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2 text-purple-700">Vintage Jewelry Set</h3>
+                        <p class="text-gray-700 mb-4">A vintage jewelry set with precious stones.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-purple-700">Starting at $7,000</span>
+                            <button class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-purple-700 text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <!-- Social Media Links -->
+            <div class="flex justify-center space-x-4 mb-4">
+                <a class="hover:text-gray-300" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="hover:text-gray-300" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="hover:text-gray-300" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="hover:text-gray-300" href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <!-- Copyright Information -->
+            <p class="mb-4">© 2023 Auction House. All rights reserved.</p>
+            <!-- Lost & Found Section -->
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-xl font-bold mb-2">Lost & Found</h3>
+                <p class="text-gray-300 mb-4">
+                    If you have lost or found an item, please contact us at
+                    <a class="text-purple-400 hover:underline" href="mailto:lostandfound@auctionhouse.com">lostandfound@auctionhouse.com</a>.
+                </p>
+                <div class="flex justify-center">
+                    <button class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">Report Lost Item</button>
+                    <button class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800 ml-4">Report Found Item</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
